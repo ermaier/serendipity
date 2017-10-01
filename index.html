@@ -42,7 +42,7 @@
     </div>
     <div class="content-wrapper">
       <div class="content">
-        <div class="snippet" id="test1">
+        <div class="snippet" id="snip1">
           <p>I plunged my hands into the gooey blob in front of me and grabbed
             with all my strength. I pulled two long, spindly strands out toward
             me. Frowning in concentration, I pulled them over, made a fist, and
@@ -71,9 +71,9 @@
           <p>I wasn’t sure why I was still there. I knew why I started the
             class: I was trying to decide whether to change careers. Philippe
             deSouse was a world-class pastry maker who had recently settled
-            himself as Principal Baker at one of the premier luxury resorts in
-            Tucson. If I was serious about baking, I couldn’t pass up an
-            opportunity to take a class from him.</p>
+             himself as Principal Baker at one of the premier luxury
+            resorts in Tucson. If I was serious about baking, I couldn’t pass up
+            an opportunity to take a class from him.</p>
           <p>His abuse of students and assistants was almost as legendary as his
             pastries. I’d shrugged it off. I can handle criticism, and I wasn’t
             worried about his scathing commentary. I just hadn’t realized he’d
@@ -83,9 +83,15 @@
             tried harder on the pronunciation. “Do you have any idea what you
             are doing?”</p>
         </div>
-        <div class="snippet" id="test2" style="display:none;">This is the SECOND
+        <div class="snippet" id="snip2" style="display:none;">This is the SECOND
           test div. </div>
-        <div class="snippet" id="test3" style="display:none;">This is the THIRD
+        <div class="snippet" id="snip3" style="display:none;">This is the THIRD
+          test div. </div>
+        <div class="snippet" id="snip4" style="display:none;">This is the THIRD
+          test div. </div>
+        <div class="snippet" id="snip5" style="display:none;">This is the THIRD
+          test div. </div>
+        <div class="snippet" id="snip6" style="display:none;">This is the THIRD
           test div. </div>
         <h2 class="content-head is-center">New stories. New voices.</h2>
         <div class="pure-g">
@@ -161,10 +167,9 @@ app.yui.use('node-base', 'node-event-delegate', function (Y) {
     	$('#readnow').click(function() {
     		$('.snippet').hide();
     		var ranNum = Math.floor((Math.random() * 6) + 1);
-    		var thisPiece = 'test' + ranNum;    		
+    		var thisPiece = 'snip' + ranNum;    		
     		$('#' + thisPiece).show();
     	});
     </script>
-    
   </body>
 </html>
