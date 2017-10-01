@@ -41,6 +41,10 @@
     </div>
     <div class="content-wrapper">
       <div class="content">
+      <div class="snippet" id="test1">This is the FIRST test div.</div>
+    	<div class="snippet" id="test2" style="display:none;">This is the SECOND test div. </div>
+    	<div class="snippet" id="test3" style="display:none;">This is the THIRD test div. </div>
+    
         <h2 class="content-head is-center">New stories. New voices.</h2>
         <div class="pure-g">
           <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
@@ -111,10 +115,13 @@ app.yui.use('node-base', 'node-event-delegate', function (Y) {
         e.preventDefault();
     }, 'a[href="#"]');
 });
-</script> <script>
+</script> 
+<script>
     	$('#readnow').click(function() {
+    		$('.snippet').hide();
     		var ranNum = Math.floor((Math.random() * 6) + 1);
-    		alert(ranNum);
+    		var thisPiece = 'test' + ranNum;    		
+    		$('#' + thisPiece).show();
     	});
     </script>
   </body>
