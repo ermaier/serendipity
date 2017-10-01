@@ -25,7 +25,8 @@
           class="pure-menu-heading"
           href="index.html">Serendipity</a>
         <ul class="pure-menu-list">
-          <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Contact Us</a></li>
+          <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Contact
+              Us</a></li>
           <li class="pure-menu-item"><a href="#" class="pure-menu-link">Authors</a></li>
           <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sign Up</a></li>
         </ul>
@@ -41,14 +42,55 @@
     </div>
     <div class="content-wrapper">
       <div class="content">
-      <div class="snippet" id="test1">This is the FIRST test div.</div>
-    	<div class="snippet" id="test2" style="display:none;">This is the SECOND test div. </div>
-    	<div class="snippet" id="test3" style="display:none;">This is the THIRD test div. </div>
-    
+        <div class="snippet" id="test1">
+          <p>I plunged my hands into the gooey blob in front of me and grabbed
+            with all my strength. I pulled two long, spindly strands out toward
+            me. Frowning in concentration, I pulled them over, made a fist, and
+            punched the whole mass back into the steel bowl.</p>
+          <p>“Meeees Reeeeeevers!” Philippe’s voice reverberated behind my head.
+            I jumped about a foot and forgot to let go of the dough. The huge
+            bowl spun towards me precariously and was only saved from landing on
+            the floor by a sudden grab from Bernie, stationed next to me. I
+            flashed her a grateful smile and re-centered the bowl in the middle
+            of my counter space.</p>
+          <p>“Yes, Monsieur deSouse,” I gasped after I’d gotten my breath back.
+            He’d massacred my name - Kay Rivers - but since he was standing
+            directly behind me and shouting at my head, no one had any doubt who
+            he was aiming for.</p>
+          <p>“This is an abomination!” he yelled, and waved his arms toward the
+            rest of the class. “Come and see this disaster so you can avoid it
+            for yourselves! Come, now!”</p>
+          <p>The remaining students in his Master Pastry class obediently
+            shuffled over and arranged themselves around my workspace. I gritted
+            my teeth and stood back a little. He’d been screaming at mistakes
+            for the last two and a half hours, and the four of us were the only
+            ones left. He had started out with ten, but that was at the
+            beginning of the session. A steady stream of furious bakers
+            demanding refunds had occupied the time of John Paul, his assistant,
+            pretty much without stopping.</p>
+          <p>I wasn’t sure why I was still there. I knew why I started the
+            class: I was trying to decide whether to change careers. Philippe
+            deSouse was a world-class pastry maker who had recently settled
+            himself as Principal Baker at one of the premier luxury resorts in
+            Tucson. If I was serious about baking, I couldn’t pass up an
+            opportunity to take a class from him.</p>
+          <p>His abuse of students and assistants was almost as legendary as his
+            pastries. I’d shrugged it off. I can handle criticism, and I wasn’t
+            worried about his scathing commentary. I just hadn’t realized he’d
+            be delivering it at a deafening volume, his head bent to an inch of
+            my face, so close I could almost feel the prickles of his two-day
+            unshaven beard. “Miss Rivers!” he said again, only this time he
+            tried harder on the pronunciation. “Do you have any idea what you
+            are doing?”</p>
+        </div>
+        <div class="snippet" id="test2" style="display:none;">This is the SECOND
+          test div. </div>
+        <div class="snippet" id="test3" style="display:none;">This is the THIRD
+          test div. </div>
         <h2 class="content-head is-center">New stories. New voices.</h2>
         <div class="pure-g">
           <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-            <h3 class="content-subhead"> Read DUP</h3>
+            <h3 class="content-subhead">Discover</h3>
             <p> Click "Read" to discover stories and perspectives from diverse
               voices. </p>
           </div>
@@ -115,8 +157,7 @@ app.yui.use('node-base', 'node-event-delegate', function (Y) {
         e.preventDefault();
     }, 'a[href="#"]');
 });
-</script> 
-<script>
+</script> <script>
     	$('#readnow').click(function() {
     		$('.snippet').hide();
     		var ranNum = Math.floor((Math.random() * 6) + 1);
@@ -124,5 +165,6 @@ app.yui.use('node-base', 'node-event-delegate', function (Y) {
     		$('#' + thisPiece).show();
     	});
     </script>
+    
   </body>
 </html>
