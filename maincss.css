@@ -75,13 +75,17 @@ label {
     color: white;
     padding: 0.5em 2em;
     border-radius: 5px;
+	height: 20%;
+	width: 20%;
 }
 
 a.pure-button-primary {
     background: dimgray;
     color: white;
     border-radius: 5px;
-    font-size: 120%;
+    font-size: 30px;
+	height: 20%;
+	width: 20%;
 }
 
 
@@ -169,7 +173,10 @@ a.pure-button-primary {
 /* This is the subheading that appears on the blue section */
 .splash-subhead {
     color: dimgray;
-    letter-spacing: 0.05em;
+    letter-spacing: 1em;
+	font-size: 1.5em;
+	text-align: center;
+	padding-left: 1em;
     opacity: 0.8;
 }
 
