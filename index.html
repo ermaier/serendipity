@@ -555,8 +555,8 @@ app.yui.use('node-base', 'node-event-delegate', function (Y) {
     		var ranNum = Math.floor((Math.random() * 6) + 1);
     		var thisPiece = 'snip' + ranNum;    		
     		$('#' + thisPiece).show();
-			$('.snippet-wrapper, .snippet-content').show()
-			$('.content, .ribbon').hide()
+			$('.snippet-wrapper, .snippet-content').fadeIn(500)
+			$('.content, .ribbon').fadeOut(500)
     	});
     </script>
   </body>
